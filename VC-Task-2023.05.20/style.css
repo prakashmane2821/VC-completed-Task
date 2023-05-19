@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Euphoria+Script&family=Playfair+Display&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Background Color  */
+    --bg-white: #fff;
+
+    /* Text Colors */
+    --primary-text: rgb(11, 29, 69);
+    --secondary-color: rgb(173, 151, 79);
+    --light-color: #e2f6de;
+    --dark-color: #333;
+    --text-white: #fff;
+    --text-grey: #dee2e6;
+
+    /* Font Family  */
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Playfair Display', serif;
+    --tertiary-font: 'Bonheur Royale', cursive;
+    --logo-font: 'Euphoria Script', cursive;
+}
+
+body,
+html {
+    color: var(--primary-text);
+    font-weight: 400;
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+h2 {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    margin-top: 40px;
+    color: var(--secondary-color);
+    font-family: var(--tertiary-font);
+    font-size: 50px;
+}
+
+.section-subtitle {
+    color: var(--primary-text);
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+
+/* Navbar Start */
+.container .navbar-brand {
+    font-size: 45px;
+    font-family: var(--logo-font);
+}
+
+.navbar-home-toggler {
+    margin-left: 10%;
+}
+
+.container .navbar-nav {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.container .navbar-nav .nav-link {
+    color: var(--primary-text);
+}
+
+.container .navbar-nav .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+.navbar-paperplane {
+    margin-right: 10%;
+}
+
+
+/* Navbar End */
+
+/* Home page Start  */
+.banner_section {
+    position: relative;
+}
+
+.banner_section .container .bg-img img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-head {
+    position: absolute;
+    margin: 30px 0 0 30px;
+    z-index: 2;
+}
+
+.banner_section .carousel-inner h5 {
+    font-size: 70px;
+    font-family: var(--secondary-font);
+    bottom: 500%;
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 1);
+    margin-bottom: 40px;
+    z-index: 2;
+    position: absolute;
+    left: 20%;
+}
+
+.banner_section .carousel-inner a {
+    font-size: 22px;
+    color: var(--text-white);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: -10px 5px 10px rgba(0, 0, 0, 1);
+    z-index: 2;
+    position: absolute;
+    bottom: 400%;
+    left: 40%;
+}
+
+.search-field {
+    width: 70%;
+    padding: 30px;
+    /* background: #fff;
+    border: 0.1px solid var(--primary-text); */
+    text-shadow: -3px 5px 10px rgba(0, 0, 0, 1);
+    position: relative;
+    z-index: 2;
+    margin-top: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    /* margin: 0 auto; */
+}
+
+.search-input {
+    margin-left: 10%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 4px solid var(--secondary-color);
+    position: absolute;
+    left: 0%;
+    z-index: 2;
+    right: 10%;
+    font-weight: 600;
+    margin-right: 20px;
+    background: transparent;
+}
+
+.main-btn {
+    padding: 10px;
+    background: var(--primary-text);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s ease;
+}
+
+.main-btn:hover {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.btn-search .main-btn {
+    width: 200px;
+    position: absolute;
+    padding: 5px;
+    z-index: 2;
+    margin-left: 95%;
+}
+
+
+/* Home page End  */
+
+/* Services Communities Section Start  */
+
+
+.communties-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    border: none;
+    outline: none;
+    width: 300px;
+    cursor: pointer;
+}
+
+.communities-card {
+    background: rgb(238, 227, 206);
+    text-align: center;
+    padding: 15px;
+    margin: 0 5px;
+    border: 1px solid var(--secondary-color);
+}
+
+.card .communities-img {
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.card h3 {
+    font-family: var(--secondary-font);
+    color: var(--primary-text);
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* Services Communities Section End */
+
+/* Buying & Selling section Start  */
+
+.listing-card {
+    border: none;
+    outline: none;
+    text-align: start;
+    border-bottom: 1px solid var(--primary-text);
+    cursor: pointer;
+}
+
+.result_section .result-card {
+    text-align: center;
+    padding-bottom: 10px;
+    border: 2px solid var(--secondary-color);
+    width: 383px;
+}
+
+.result-img {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.vtext,
+.bvtext,
+.arrow {
+    color: var(--secondary-color);
+}
+
+.btn-arrow {
+    color: var(--primary-text);
+}
+
+.sticky-element {
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    cursor: pointer;
+}
+
+#welcome span.arrow {
+    transform: rotate(180deg);
+}
+
+.arrow {
+    transform: rotate(90deg);
+    display: inline-block;
+}
+
+#welcome {
+    transform: rotate(270deg);
+    width: fit-content;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    gap: 9px;
+}
+
+#back-to-top {
+    transform: rotate(270deg);
+    width: fit-content;
+    display: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    float: right;
+    font-weight: 600;
+    gap: 9px;
+
+}
+
+/* Buying & Selling Section End  */
+
+/* About section Start  */
+
+.about_section .about-1 {
+    position: absolute;
+    z-index: 2;
+}
+
+.about_section .about-2 {
+    position: relative;
+    z-index: 1;
+    margin-left: 100px;
+    margin-top: -20px;
+}
+
+/* About section End  */
+
+.service-card {
+    position: relative;
+    background: var(--text-grey);
+}
+
+.service-card {
+    background-color: var(--text-grey);
+    z-index: 1;
+}
+
+.service-img1 {
+    position: absolute;
+    z-index: -1;
+    padding: 50px;
+}
+
+.service-img2 {
+    margin-left: 120px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.service-img3 {
+    position: relative;
+    z-index: -2;
+    top: 150px;
+}
+
+.service-title {
+    position: absolute;
+    margin-left: 100px;
+}
+
+.service-img4 {
+    position: absolute;
+    z-index: -1;
+    padding: 50px;
+    right: 10%;
+}
+
+.service-img5 {
+    margin-left: 200px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.service-img6 {
+    position: relative;
+    z-index: -2;
+    top: 150px;
+}
+
+/* Events Section End   */
+
+/* Contact Section Start  */
+
+.webcontact_section .cwr-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.webcontact_section .cwr-contact h2 {
+    font-size: 54px;
+
+}
+
+.webcontact_section .cwr-contact a {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Contact Section End  */
+
+
+/* Testimonial Start   */
+.testimonial_section {
+    border-bottom: 10px solid var(--secondary-color);
+    background: url(./images/testimonial-bg.png);
+    color: white;
+}
+
+.testimonial_section .container {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+
+}
+
+.testimonial_section .container h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+.testimonial_section .container .para {
+    width: 750px;
+}
+
+.testimonial_section .container .para p {
+    text-align: center;
+}
+
+.testimonial_section .container .para h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.subscribe_section {
+    background: url(./images/sub-bg.png);
+}
+
+.subscribe_section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subscribe_section .container h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    letter-spacing: 0.5px;
+    margin-top: 50px;
+}
+
+.subscribe_section .container .para2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe_section .container h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.subscribe_section .container a {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+/* Testimonial End   */
+
+
+/* Footer Start  */
+.footer_section {
+    background: url(./images/footer-bg.png);
+    color: #fff;
+    font-family: var(--secondary-font);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer_section .footer-logo {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.footer_section h4 {
+    font-size: 27px;
+    margin: 20px 0 10px 0;
+}
+
+.footer_section h5 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.footer_section ul li {
+    list-style: none;
+}
+
+.footer_section ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 15px 0;
+    font-family: var(--primary-font);
+}
+
+.footer_section h3 {
+    font-family: var(--primary-font);
+    font-size: 22px;
+}
+
+.copyright-section {
+    margin-bottom: 20px;
+    font-family: var(--primary-font);
+}
+
+.copyright-section a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Footer End  */
+
+/* 
+==========================
+     MEDIA QUARIES
+========================== 
+*/
+
+@media(max-width:1200px) {
+    .section-subtitle {
+        max-width: 60%;
+    }
+
+    .communities-card {
+        padding: 0 7px;
+        text-align: center;
+    }
+
+    .communities-card h3 {
+        font-size: 16px;
+
+    }
+
+    .listing-card {
+        padding: 0 7px;
+    }
+
+}
+
+@media (max-width:991px) {
+
+    .navbar-paperplane,
+    .navbar-home-toggler {
+        visibility: hidden;
+    }
+
+    .webcontact_section {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn-search .btn {
+        font-size: 10px;
+        margin-left: 80%;
+    }
+}
+
+
+@media (max-width:767px) {
+
+    body,
+    html {
+        font-size: 8px;
+    }
+
+    .section-subtitle {
+        max-width: 80%;
+    }
+
+    .communities-card {
+        padding: 0 5px;
+    }
+
+    .navbar-toggler {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:590px) {
+
+    body,
+    html {
+        font-size: 7px;
+    }
+
+    .navbar-toggler {
+        font-size: 22px;
+    }
+}
